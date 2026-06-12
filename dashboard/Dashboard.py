@@ -684,7 +684,8 @@ with col8:
         **PLOTLY_BASE,
         title=titulo,
         height=max(350, top_n_circ * 26),
-        legend=dict(orientation="h", y=1.04, x=0),
+    )
+    fig6.update_layout(legend=dict(orientation="h", y=1.04, x=0)),
     )
     fig6.update_xaxes(title="Posición de salida del ganador", **AXIS_STYLE)
     fig6.update_yaxes(title="", **AXIS_STYLE)
